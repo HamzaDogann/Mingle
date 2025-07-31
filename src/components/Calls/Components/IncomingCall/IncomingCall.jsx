@@ -1,6 +1,6 @@
 import { useModal } from '../../../../contexts/ModalContext';
 import { useSignalR } from '../../../../contexts/SignalRContext';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ErrorAlert } from "../../../../helpers/customAlert.js";
 
@@ -8,11 +8,11 @@ import { PiPhoneFill } from "react-icons/pi";
 import { PiPhoneSlashFill } from "react-icons/pi";
 import { HiMiniVideoCamera } from "react-icons/hi2";
 import IncomingCallSound from "../../../../assets/sound/MingleCallSound.mp3";
-import CallModal from '../CallModal';
+import CallModal from '../CallModal/CallModal.jsx';
 import { setIsRingingIncoming } from '../../../../store/Slices/calls/callSlice';
-import "./style.scss";
 import { defaultProfilePhoto } from '../../../../constants/DefaultProfilePhoto.js';
 import PreLoader from '../../../../shared/components/PreLoader/PreLoader.jsx';
+import "./style.scss";
 
 function IncomingCall({ callType, callerProfile, callId }) {
 

@@ -1,4 +1,4 @@
-@use "../../../shared/styles/main.scss" as *;
+@use "../../../../shared/styles/main.scss" as *;
 
 .call-modal {
     @include flex-center(column, space-between, center);

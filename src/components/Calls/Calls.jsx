@@ -8,7 +8,7 @@ import { IoChatbubbleEllipses } from "react-icons/io5";
 import { PiPhoneFill } from "react-icons/pi";
 import { HiMiniVideoCamera } from "react-icons/hi2";
 
-import CallModal from './Components/CallModal';
+import CallModal from './Components/CallModal/CallModal.jsx'; 
 import useScreenWidth from '../../hooks/useScreenWidth.js';
 import WelcomeScreen from '../WelcomeScreen/WelcomeScreen'
 

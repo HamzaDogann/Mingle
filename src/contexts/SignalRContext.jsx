@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from 'react-router-dom';
-import { createContext, useContext, useState, useEffect, useRef } from "react";
+import { createContext, useContext, useState, useEffect, useRef, useCallback } from "react";
 import { HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
 
 import { getJwtFromCookie } from "../store/helpers/getJwtFromCookie.js";
@@ -16,7 +16,6 @@ import { decryptMessage } from '../helpers/messageCryptoHelper.js';
 
 import store from '../store/index.js';
 import { ErrorAlert } from "../helpers/customAlert.js";
-import MinglePreLoader from "../shared/components/MinglePreLoader/MinglePreLoader.jsx";
 import PreLoader from "../shared/components/PreLoader/PreLoader.jsx";
 
 
@@ -610,6 +609,7 @@ export const SignalRProvider = ({ children }) => {
 
         } catch { }
     };
+
 
     if (loading) {
         return (

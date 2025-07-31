@@ -9,7 +9,7 @@ import { HiMiniVideoCamera } from "react-icons/hi2";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-import CallModal from '../../Calls/Components/CallModal';
+import CallModal from '../../Calls/Components/CallModal/CallModal';
 import { formatDateForLastConnectionDate } from '../../../helpers/dateHelper';
 import { startCall } from '../../../helpers/startCall';
 import { defaultProfilePhoto } from '../../../constants/DefaultProfilePhoto';
