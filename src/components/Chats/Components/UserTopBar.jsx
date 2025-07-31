@@ -8,7 +8,7 @@ import { PiPhoneFill } from "react-icons/pi";
 import { HiMiniVideoCamera } from "react-icons/hi2";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 
-import CallModal from '../../Calls/Components/CallModal';
+import CallModal from '../../Calls/Components/CallModal/CallModal';
 import { formatDateForLastConnectionDate } from '../../../helpers/dateHelper';
 import BackToMenuButton from '../../../shared/components/BackToMenuButton/BackToMenuButton';
 import { startCall } from '../../../helpers/startCall';
